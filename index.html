@@ -4,25 +4,90 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Cotton Recycling</title>
     <link href="/styles/main.css" rel="stylesheet" />
+    <script src="main.js"></script> 
   </head>
   <body>
     <header role="banner">
-      <h1>Welcome to my Website!</h1>
+      <h1>Cotton Recycling</h1>
     </header>
     <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
-
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
-      </div>
+      <section>
+        <blockquote>
+          <p id="hover-paragraph">
+            Old clothes currently make up about 6% of all household trash in Israel. 
+            Therefore, recycling the clothes can save up to 15 times the total energy required in the process of disposing of the clothes.
+          </p>
+          <p>
+            In order to produce 1 kg of cotton, approximately 8,000 liters of water are needed! 
+            Therefore, reusing clothes is more environmentally friendly and can even be a factor in huge water savings.
+          </p>
+      </blockquote>
+      </section>
+      <section>
+        <h2>Ways to Recycle Cotton</h2>
+        <div class="flex-container">
+          <div class="flex-item">
+            <h3>Upcycle</h3>
+            <img src="/upcycle.jpg" alt="Upcycle clothes into new clothes" />
+            <p>Transform your clothes into useful items like tote bags, pillowcases, or even rugs.</p>
+          </div>
+          <div class="flex-item">
+            <h3>Repurpose as Cleaning Rags</h3>
+            <img src="/rags.jpg" alt="Reuse old clothes in household" />
+            <p>Turn old t-shirts or towels into effective and eco-friendly cleaning cloths.</p>
+          </div>
+          <div class="flex-item">
+            <h3>Swap Clothes</h3>
+            <img src="/swap.jpg" alt="Swap clothes" />
+            <p>Host a clothes swap with friends or sell gently used items online to give them a new home.</p>
+          </div>
+          <div class="flex-item">
+            <h3>Use for Craft Projects</h3>
+            <img src="/flags.jpg" alt="Create art from old clothes(flags)" />
+              <p>
+              <a href="https://www.youtube.com/watch?v=dPjHJhXo9D8">Cut up fabric scraps from clothes
+               to make quilts, decorations, or art projects.</a>
+              </p>
+          </div>
+        </div>
+        <section>
+          <p class="donate">
+            <h2>Recycle Through Specialized Programs and Donate:</h2>
+            <div>
+              <button type="button" class="button-link">
+              <a href="http://rosnir.co.il/" target="_blank" rel="noopener noreferrer">
+                Textile Recycling Factory in Israel
+              </a>
+              </button>
+              <button type="button" class="button-link">
+                <a href="https://www.jerusalem.muni.il/he/residents/clean-city/improvingcity/recycling/?cats=textile"
+                target="_blank" rel="noopener noreferrer">
+                Textile Recycling in Jerusalem
+              </a></button>
+              <button type="button" class="button-link">
+                <a href="https://www.tel-aviv.gov.il/Residents/Environment/Pages/WasteSeparation.aspx"
+                target="_blank" rel="noopener noreferrer">
+                Textile Recycling in Tel Aviv
+              </a></button>
+            </div>
+          </p>
+        </div>
+      </section>
+      <br />
+      <a href="/cotton_production.html"><strong>Check out the steps of cotton production!</strong></a>
+      <div><hr></div>
+      <section>
+        <h4>Interact with Me</h4>
+        <p id="toggle-paragraph">Click the button to highlight this text.</p>
+        <button class="button-link" onclick="toggleHighlight()">Push Me</button>
+        
+      </section>
     </main>
-
-    <script type="module" src="/main.js"></script>
+    <footer>
+      <p>&copy; 2024 Textile Recycling in Israel</p>
+    </footer>
+    <!-- <script type="module" src="/main.js"></script> -->
   </body>
 </html>
